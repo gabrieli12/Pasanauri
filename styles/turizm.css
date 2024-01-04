@@ -1,0 +1,818 @@
+
+
+main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* ტურიზმის მთავარი ტექსტი სადაც ფასანაურში ტურიზმზეა საუბარი */
+.turizm-main-text{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+#wrapper p {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: wrap; /* Prevent line breaks */
+    letter-spacing: 2px;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    padding-right: 8px; /* Adjust padding as needed */
+    width: 60rem;
+    display: flex;
+    justify-self: center;
+    color: darkgreen;
+    margin: 10px;
+    padding: 10px;
+    height: 15rem;
+} 
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ტურიზმის მენიუ სადაც ჩამოწერილია ის ყველაფერი რაც შედის ტურიზმში */
+.turizm-menu{
+    position: sticky;
+    top: 100px;
+    width: 12%;
+    left: 100%;
+    border: none;
+
+}
+.turizm-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.turizm-menu ul a{
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(6, 65, 6);
+}
+
+
+.turizm-menu img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* --------------------------------------------------------- */
+/* ჯომარდობა rafting */
+.rafting-about{
+    position: absolute;
+    top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    width: 90%;
+    
+}
+.intro{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 43rem;
+}
+.intro h1{
+    font-size: 2.5rem;
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+.intro p:nth-of-type(1){
+    color: rgb(6, 65, 6);
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    max-width: 100%;
+}
+.rafting-contact{
+    margin: 5px;
+    padding: 5px;
+}
+.rafting-contact button{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.5s;
+ 
+}
+.rafting-contact button:hover{
+    cursor: pointer;
+    /* background-color: rgb(6, 65, 6); */
+    background-color: aliceblue;
+    color: rgb(6, 65, 6);
+}
+.contact-row-mark{
+    margin: 5px;
+    padding: 5px;
+    transform: rotate(-90deg);
+    /* animation: move2 2s infinite; */
+}
+/* @keyframes move2 {
+    0%, 100% {
+        transform: translateX(0);
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: translateX(10px);
+        transform: rotate(-90deg);
+    }
+} */
+
+
+.rafting-about img{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ჯომარდობის მეორე ნაწილი */
+
+.rafting-river{
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    background-color: aliceblue;
+}
+.rafting-river img{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.rafting-river p{
+    margin: 10px;
+    padding: 20px;
+    padding-right: 20px;
+    letter-spacing: 0.8px;
+    font-size: 1.2rem;
+    color: rgb(6, 65, 6);
+    max-width: 35rem;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* კვადროები */
+.bikes{
+    margin: 0px 0px;
+    margin-top: 100px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bike-title{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.7rem;
+    letter-spacing: 4px;
+}
+
+.bikes-img-txt{
+    margin: 30px 10px;
+    padding: 10px;
+    padding-right: 80px;
+    display: flex;
+    margin: 100px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.bikes-intro {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.bikes-intro h1{
+    margin: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.bikes-intro p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    max-width: 45rem;
+}
+.bikes-img-txt img{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 25rem;
+}
+
+/* კვადროების ვიდეოები */
+.kvadroebi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: aliceblue;
+    /* background-color: rgba(27, 222, 89, 0.133); */
+    padding: 80px;
+    width: 100%;
+
+}
+.kvadro-video{
+    margin: 10px;
+    padding: 10px;
+    height: 30rem;
+    width: 40rem;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 255, 0, 0.050);
+    /* box-shadow: 0px 0px 50px rgb(0, 255, 0); */
+    box-shadow: 0px 0px 50px #b6c7b4; 
+
+
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* ცხენოსნობა */
+
+.cxenosnoba{
+    margin: 150px 20px;
+    padding: 50px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hors-intro{
+    margin: 10px;
+    padding: 10px;
+}
+.hors-intro h1{
+    margin: 5px;
+    padding: 5px;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+.hors-intro p{
+    margin: 5px;
+    padding: 5px;
+}
+.hors-intro p:nth-of-type(1){
+    margin: 10px 5px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 0.8px;
+    max-width: 50rem;
+    color: rgb(6, 65, 6);
+}
+.cxenosnoba img{
+    max-width: 20rem;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 50px;
+    transition: 1s;
+}
+
+.cxenosnoba img:hover{
+    transform: skew(-10deg);
+    cursor: pointer;
+}
+.cxenosnoba img:active{
+    transform:skewY(10deg) ;
+}
+
+
+
+/* --------------------------------------------------------- */
+/* მჟავე წყლები */
+.sparkling-water{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 50px;
+}
+
+/* მჯავეწყლის ზედა ნაწილი */
+.water-top-place{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.water-top-place h1{
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+.water-top-place p{
+    margin: 10px;
+    padding: 10px;
+
+}
+.water-top-place p:nth-of-type(1){
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    max-width: 65rem;
+    line-height: 28px;
+
+}
+.water-top-place img{
+    margin: 10px;
+    margin-right: 70px;
+    border-radius: 20px;
+    max-width: 20rem;
+}
+
+
+
+/* მჟავეწყლის ქვედა ნაწილი */
+.water-bottom-place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 30px;
+    width: 100%;
+}
+.water-bottom-place img{
+    margin: 20px;
+    border-radius: 20px;
+    max-width: 20rem;
+}
+.water-bottom-place p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    max-width: 55rem;
+    line-height: 35px;
+    padding-right: 70px;
+}
+
+
+/* ------------------------------------------------------------- */
+/* turizm footer ტურიზმის დასასრული*/
+.turizm-footer{
+    margin: 20px;
+    margin-top: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.turizm-footer p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    max-width: 70rem;
+    letter-spacing: 1px;
+    line-height: 29px;
+    padding-right: 50px;
+}
+.imedi-video{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.imedi-video p{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: rgb(90, 90, 15);
+}
+.imedi-video video{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 35rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1022px){
+    
+    .rafting-river{
+        margin: 0;
+        padding-right: 50px;
+    }
+    .rafting-river p{
+        margin-right: 20px;
+    }
+
+    /* bikes */
+    .bikes-intro h1{
+        font-size: 1.7rem;
+    }
+    .bikes-img-txt img{
+        max-width: 23rem;
+    }
+
+    /* horses */
+    .hors-intro h1{
+        font-size: 2.4rem;
+    }
+    .cxenosnoba img{
+        max-width: 18rem;
+       
+    }
+
+    /* turizm footer */
+    .imedi-video p{
+        font-size: 1.1rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 940px){
+
+    /* rafting */
+    .rafting-about h1{
+        font-size: 2.2rem;
+    }
+    .intro p:nth-of-type(1){
+        font-size: 1.1rem;
+    }
+    .rafting-about img{
+        max-width: 55%;
+        margin-right: 50px;
+    }
+
+    .rafting-river img{
+        max-width: 50%;
+    }
+    .rafting-river p{
+        font-size: 1.1rem;
+    }
+
+
+
+    /* bikes კვადროები */
+    .bike-title{
+        font-size: 2.3rem;
+    }
+    .bikes-intro h1{
+        font-size: 1.3rem;
+    }
+    .bikes-intro p{
+        font-size: 1rem;
+    }
+    .bikes-img-txt img{
+        max-width: 44%;
+    }
+    /* videos */
+    .kvadro-video{
+        height: 20rem;
+    }
+
+
+
+    /* horses */
+    .hors-intro h1{
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+    }
+   
+    .hors-intro p:nth-of-type(1){
+        font-size: 1.1rem;
+    }
+    .cxenosnoba img{
+        max-width: 16rem;
+        border-radius: 20px;
+        margin: 10px;
+        margin-right: 50px;
+    }
+
+
+    /* sparkling water */
+    .water-top-place img{
+        max-width: 17rem;
+    }
+    .water-intro h1{
+        font-size: 2rem;
+    }
+    .water-top-place p:nth-of-type(1){
+        font-size: 1rem;
+    }
+
+    .water-bottom-place img{
+        max-width: 17rem;
+    }
+    .water-bottom-place p{
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+
+
+    /* turizm footer */
+   
+    .imedi-video p{
+        font-size: 1rem;
+    }
+    .imedi-video video{
+        max-width: 27rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 735px){
+    /* rafting */
+    .rafting-about{
+        flex-direction: column;
+    }
+    .rafting-about img{
+        max-width: 21rem;
+    }
+    .rafting-about h1{
+        font-size: 2.1rem;
+    }
+    .intro p:nth-of-type(1){
+        font-size: 1rem;
+    }
+
+    .rafting-river{
+        flex-direction: column-reverse;
+        margin-top: 250px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .rafting-river img{
+        max-width: 20rem;
+    }
+    .rafting-river p{
+        max-width: 85%;
+    }
+
+    /* bikes */
+    .bikes-img-txt{
+        flex-direction: column;
+    }
+    .bikes-img-txt img{
+        max-width: 18rem;
+    }
+    /* bikes videos */
+    .kvadroebi{
+        flex-direction: column;
+        margin: 0;
+        padding: 50px 20px;
+    }
+    .kvadro-video{
+        max-width: 80%;
+        height: 27rem;
+    }
+
+
+    /* horses */
+    .cxenosnoba{
+        flex-direction: column;
+    }
+    .hors-intro p:nth-of-type(1){
+        padding-right: 20px;
+    }
+
+
+    /* sparkling water */
+    .water-top-place{
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .water-top-place p:nth-of-type(1){
+        padding-right: 50px;
+    }
+    .water-bottom-place{
+        flex-direction: column-reverse;
+    }
+    .water-bottom-place img{
+        margin-right: 100px;
+    }
+
+    /* turizm footer */
+    .imedi-video{
+        flex-direction: column;
+    }
+    .imedi-video i{
+        transform: rotate(1deg);
+    }
+
+}
+
+@media screen and (max-width: 690px){
+    #wrapper p{
+        height: 20rem;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 530px){
+    #wrapper p{
+        height: 22rem;
+        font-size: 1.3rem;
+    }
+
+    .bike-title{
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1.8rem;
+    }
+    
+    .rafting-about img{
+        max-width: 90%;
+    }
+    .rafting-about h1{
+        font-size: 2rem;
+    }
+    .intro p:nth-of-type(1){
+        font-size: 0.9rem;
+    }
+    .intro{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .intro p{
+        font-size: 0.9rem;
+    }
+
+
+    /* horses */
+    .cxenosnoba{
+        padding-left: 0;
+    }
+    .hors-intro{
+        margin-left: 0;
+    }
+    .hors-intro h1{
+        font-size: 2rem;
+    }
+    .hors-intro p:nth-of-type(1){
+        font-size: 1.05rem;
+    }
+
+
+    /* sparkling water */
+    .water-top-place img{
+        max-width: 65%;
+        margin-right: 0;
+    }
+    .water-intro h1{
+        font-size: 1.7rem;
+    }
+    .water-intro p:nth-of-type(1){
+        font-size: 0.95rem;
+        line-height: 25px;
+    }
+
+    .water-bottom-place img{
+        max-width: 16rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #wrapper p{
+        height: 23rem;
+        font-size: 1.2rem;
+    }
+
+    .turizm-menu a img{
+        width: 45px;
+        height: 45px;
+    }
+
+
+    /* rafting */
+    .rafting-about{
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    .rafting-about h1{
+        font-size: 1.9rem;
+    }
+    .intro p:nth-of-type(1){
+        font-size: 0.9rem;
+    }
+    .intro{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .intro p{
+        font-size: 0.9rem;
+    }
+
+    .rafting-river img{
+        max-width: 84%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .rafting-river p{
+        font-size: 0.9rem;
+    }
+    .bike-title{
+        padding-right: 50px;
+    }
+
+    /* bikes კვადროები */
+    .bikes-intro h1{
+        font-size: 1.2rem;
+    }
+    .bikes-intro p{
+        font-size: 0.9rem;
+    }
+    .bikes-img-txt img{
+        max-width: 17rem;
+    }
+    /* bikes video */
+    .kvadro-video{
+        height: 19rem;
+    }
+
+
+    /* sparkling water */
+    .water-intro h1{
+        font-size: 1.6rem;
+    }
+    .water-intro p:nth-of-type(1){
+        font-size: 0.9rem;
+        padding-right: 20px;
+        
+    }
+    .water-top-place img{
+        max-width: 75%;
+    }
+
+    .water-bottom-place{
+        justify-content: center;
+        align-items: center;
+    }
+    .water-bottom-place p{
+        font-size: 0.95rem;
+        padding-right: 35px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .water-bottom-place img{
+        max-width: 70%;
+        margin-right: 50px;
+    }
+
+    /* turizm footer */
+
+    .turizm-footer{
+        padding-left: 5px;
+    }
+    .turizm-footer p {
+        font-size: 0.95rem;
+        padding-right: 30px;
+    }
+
+    .imedi-video{
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .imedi-video p{
+        font-size: 0.9rem;
+    }
+    .imedi-video video{
+        max-width: 100%;
+    }
+
+
+
+}
+/* #wrapper p */

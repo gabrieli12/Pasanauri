@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფასანაური</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/turizm.css">
+</head>
+<body>
+
+
+    
+    <!-- header -->
+    <header>
+        
+        <!-- navbar -->
+        <nav>
+            <div class="nav-logo">
+                <img src="/images/307714260_464660172361263_5252286152516243776_n.jpg" alt="" >
+                <h1>ფასანაური</h1>
+            </div>
+            <div class="menu">
+                <a href="#">მთავარი</a>
+                <a href="#service">ტურიზმი</a>
+                <a href="#">კულინარია</a>
+                <a href="#">ღირსშესანიშნაობები</a>
+
+                <a href="#">მომსახურება</a>
+                <a href="#">შესახებ</a>
+                <a href="#">კონტაქკტები</a>
+            </div>
+
+            <i class="fa-solid fa-bars burger-menu" id="open-menu"></i>
+
+          
+            <!-- <select class="language-select" name="language" id="language-swicher">
+                <option value="ქარ">ქართული</option>
+                <option value="en">English</option>
+            </select> -->
+        </nav>
+
+
+        <!-- გვერდითი ნავბარი მცირე ზომის მოწყობილობებისთვის -->
+        <div class="mobile-sidebar" id="side-bar">
+            <i class="fa-solid fa-xmark close-menu" id="close-menu"></i>
+            
+            <div class="side-logo">
+                <img src="/images/307714260_464660172361263_5252286152516243776_n.jpg" alt="">
+                <h1>ფასანაური</h1>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="#">მთავარი</a>
+                <a href="#service">ტურიზმი</a>
+                <a href="#">კულინარია</a>
+                <a href="#">ღირსშესანიშნაობები</a>
+
+                <a href="#">მომსახურება</a>
+                <a href="#">შესახებ</a>
+                <a href="#">კონტაქკტები</a>
+
+                <a href="#">გალერეა</a>
+            </div>
+
+            <div class="info">
+                <h1 class="owner">შექმნილია გიორგი მოლოდინის მიერ</h1>
+                <i class="fa-solid fa-arrow-down "></i>
+                <a href="https://www.facebook.com/profile.php?id=100014323875029" target="_blank"><img src="/images/fb-logo.png" alt="" ></a>
+            </div>
+
+        </div>
+        
+
+
+        <!-- ჰედერიი -->
+        <img class="main-img" src="/images/1451943_566998446701833_794672285_n.jpg" alt="">
+        <div class="bgcolor"></div>
+
+        <section class="main-introduction">
+            <div class="texts">
+                <h1 class="title">მოგზაურობა ფასანაურში</h1>
+                <p class="introduction">
+                    ფასანაური, ეს გასაოცარი ადგილი მდებარეობს საქართველოს ჩრდილო-აღმოსავლეთ ნაწილში, ის გამოირჩევა თავისი კულტურით და მრავალფეროვნებით, გასაოცარი და თვალის მომჭრელი ხედებით, ფასანაურში არის ორი არაგვის შეერთება, ასევე ფასანაური გამორჩეულია თავისი გასაოცარი <a href="#">სამზარეულოთი </a> და რაც მთვარია ფასანაურული ხინკალით.
+                    <br>
+                    <br>
+                    <span>
+                        დააჭირე ღილაკს და გაიგე ფასანაურის ისტორიის შესახებ უფრო მეტი და დატკბი მისი საოცრებებით
+                    </span>
+                    <br>
+                    <i class="fa-solid fa-arrow-down mark"></i>
+                
+                </p>
+
+                <button>გაიგე მეტი</button>
+            </div>
+
+            <div class="img-slider">
+                <button onclick="prev()"><i class="fa-solid fa-angle-left"></i></button>
+                <div>
+                    <img id="slider" src="/imgs-for-slide/img2.jpg" alt="" width="500">
+                    <p><a href="#">გალერეა</a></p>
+                </div>
+                <button onclick="next()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+    </header>
+
+
+<!-- /ესტუმრე ფასანაურს და გაატარე დაუვიწყარი დრო ამ უმშვენიერეს ადგილას -->
+    
+    <main>
+
+        <!-- ტურიზმი -->
+        <section>
+
+            <!-- ტურიზმის საწყისი -->
+            <section class="turizm" id="service">
+                <h1 class="starter" >სერვისები</h1>
+
+                <div class="turizm-main-text" id="wrapper" data-aos="zoom-in">
+                    <p id="animated-text" ></p>
+                </div>
+            </section>
+
+
+            <hr id="rafting" style="margin-bottom: 270px;">
+
+
+
+            <!-- ტურიზმის მარჯვენა მენიუ -->
+            <section class="turizm-menu" style="margin: 50px 10px;">
+                <ul>
+                    
+                    <a href="#rafting">
+                        <img src="/images/jomardoba.jpeg" alt="">
+                    </a> 
+                    
+                    <a href="#bikes">
+                        <img src="/images/kvadro.jpg" alt="">
+                    </a>
+
+                    <a href="#horses">
+                        <img src="/images/cxenosnoba.jpg" alt="">
+                    </a>
+
+                    <a href="#sparkling-water">
+                        <img src="/images/mineral-water.jpg" alt="">
+                    </a>
+
+                </ul>
+            </section>
+
+
+
+
+            <!-- ჯომარდობა -->
+            <section class="rafting-about" data-aos="zoom-in" >
+                <div class="intro">
+                    <h1>ჯომარდობა</h1>
+                    <p>მოქცეულია მტკვრის შუაწელის დაახლოებით 400 კმ მონაკვეთი. მტკვარი ყველაზე გრძელია აზერბაიჯანში, სადაც მისი სიგრძე 906 კმ-ს უდრის.</p>
+
+                    <p class="rafting-contact">
+                        დაგვიკავშირდი და გაიგე მეტი <i class="fa-solid fa-arrow-down contact-row-mark"></i>
+                        <a href="#">
+                            <button>დაგვიკავშირდი</button>
+                        </a>
+                    </p>
+
+                </div>
+
+                <img src="/images/jomardoba.jpeg" alt="" width="450">
+
+            </section>
+            
+            <section class="rafting-river" >
+                <img src="/images/img3.jpeg" alt="" width="400" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+                <p data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    არ შეიძლება არ აღინიშნოს თეთრი და შავი არაგვი სადაც ნავები ეშვება, ამ მდინარეებზე დაუვიწყარი თავგადასავლები და ულამაზესი ლანდშაფტები, მათი შეერთება სადაც ნავები იჭრება და ორფერში მიცურავს, ერთ მხარეს თეთრი არაგვია მეორე მხარეს კი შავი
+                </p>
+            </section>
+            
+
+
+
+            <!-- კვადროები  -->
+            <section class="bikes" id="bikes">
+                <h1 class="bike-title">კვადრო ტურები</h1>
+
+                <div class="bikes-img-txt" data-aos="zoom-in">
+                    <div class="bikes-intro">
+                        <h1>იმოგზაურე ფასანაურში კვადროებით!</h1>
+                        <p>
+                            ფასანაურში იხილავთ ტურისტებზე და დამსვენებლებზე განკუთვნილ კვადრტო ტურებს, ტურები მოიცავს ფასანაურის დათვალიერებას კვადროებით, დაუვიწყარ შეგრძნებებს, გასაოცარი ადგილების ნახვას, ფოტო/ვიდეოს გადაღებას და დამონტაჟებას ...
+                        </p>
+
+                        <p class="rafting-contact">
+                            დაგვიკავშირდი და გაიგე მეტი <i class="fa-solid fa-arrow-down contact-row-mark"></i>
+                            <a href="#">
+                                <button>დაგვიკავშირდი</button>
+                            </a>
+                        </p>
+                    </div>
+
+                    <img src="/images/kvadroebi.png" alt="" >
+                </div>
+
+
+                <div class="kvadroebi" >
+                    <video class="kvadro-video" controls data-aos="fade-right">
+                        <source src="/videos/kvadroebi1.mp4">
+                    </video>
+
+                    <video class="kvadro-video" controls data-aos="fade-left">
+                        <source src="/videos/kvadroebi2.mp4">
+                    </video>
+                </div>
+
+            </section>
+
+            <hr id="horses">
+
+
+
+
+            <!-- ცხენოსნობა -->
+            <section class="cxenosnoba" >
+
+                <div class="hors-intro">
+                    <h1>ცხენოსნობა</h1>
+                    <p>
+                        ფასანაურში გვხვდება საცხენოსნო ტურები, რომელიც მოიცავს ბუნებაში გასეირნებას ცხენებით. გუდამაყრის ხეობის, შავი არაგვის და თეთრი არაგვის მონახულებას, თავის ულამაზესი ფლორა და ფაუნით და ამ ადგილების ისტორიის გაცნობას 
+                    </p>
+
+                    <p class="rafting-contact">
+                        დაგვიკავშირდი და გაიგე მეტი <i class="fa-solid fa-arrow-down contact-row-mark"></i>
+                        <a href="#">
+                            <button>დაგვიკავშირდი</button>
+                        </a>
+                    </p>
+
+                </div>
+
+                <img src="/images/cxenebi1.jpg" alt="" >
+                
+            </section>
+        
+            <hr id="sparkling-water">
+
+
+
+
+            <!-- მჟავე წყლები -->
+            <section class="sparkling-water" >
+                
+                <div class="water-top-place">
+                    <div class="water-intro">
+                        <h1>მინერალური წყლები</h1>
+                        <p>
+                            ფასანაურში გვხვდება დიდი რაოდენობის მინერალური წყლები, ის შეიცავს დიდი რაოდენობით გოგირდს რომელიც სიმჟავის გემოს აძლევს მაგრამ ძალიან გემრიელი დასალევია, სწორედ ამიტომ მას მჟავეწყალს უწოდებენ, ასევე ამის გამო მისი მიმდებარე ახლო ტერიტორიები იცვლის ფერს და ჟანგის ფრად იღებება   
+                        </p>
+
+                        <p class="rafting-contact">
+                            დაგვიკავშირდი და გაიგე მეტი <i class="fa-solid fa-arrow-down contact-row-mark"></i>
+                            <a href="#">
+                                <button>დაგვიკავშირდი</button>
+                            </a>
+                        </p>
+                    </div>
+
+                    <img src="/images/mjavewyali1.jpg" alt="">
+                </div>
+
+                <div class="water-bottom-place">
+                    <img src="/images/mjavewyali2.jpg" alt="">
+                    <p>
+                        ფასანაურში მცხოვრებლნი ხშირად სვამენ ამ წყალს, რადგან ის ძალიან სასარგებლოა ჯანმრთელობისთვის, მისი მიღებით თქვენი კუჭ-ნაწლავი იწმინდება და უფრო ჯანსაღდება,
+                        ნებისმიერ ტურისტს და მგზავრს შეუძლია ამ წყაროს ესტუმროს, დააგემოვნოს და გაჯანსაღდეს
+                    </p>
+                </div>
+                
+
+            </section>
+
+            <hr>
+
+
+            <!-- ტურიზმის დასასრული -->
+            <section class="turizm-footer">
+                <p>
+                    შავი და თეთრი არაგვი ქმნის უნიკალურ ჰავას რომელიც ხელს უწყობს გაჯანსაღებას, ერთ-ერთი მიზეზი ესაა რატომაც ხალხი სტუმრობს ამ უმშვენიერეს და ულამაზეს ადგილს, ფასანაურში არის სუფთა ჰაერი, რომელიც ფილტვებს ასუფთვებს და წმენდს, ფასანაური ნამდვილად ძალიან კარგი დასასვენებელი კურორტია
+                </p>
+
+                <div class="imedi-video">
+                    <p>
+                        ფასანაურზე საუბრობს იმედის დილა <i class="fa-solid fa-arrow-down contact-row-mark"></i>
+                    </p>
+                    <video src="/videos/pasanauri.mp4" controls></video>
+                </div>
+
+            </section>
+
+        </section>
+
+        
+
+    </main>
+
+
+
+
+
+
+
+    <script src="/scripts/smooth-scrolling-animation.js"></script>
+    <script src="/scripts/side-menu.js"></script>
+    <script src="/scripts/img-slider.js"></script>
+    <script src="/scripts/animation-txt.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
+
+
+<!-- 1270 -->
